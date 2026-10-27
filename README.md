@@ -77,6 +77,14 @@ An entry `⟨a, b, m⟩ : RationalComplex` means exactly $c=a/m+i\,b/m$, with in
 
 The JSON coordinates under [`witnesses/`](witnesses/) provide another readable copy. A [Lean transcription audit](Tools/AuditData.lean) compares them with the Lean lists using exact integer arithmetic. The proofs use the Lean lists directly and do not depend on parsing JSON.
 
+The plots below show both polynomials on the complex plane. Each critical point $c$ is a dot, colored from yellow to red by the **magnitude** $|P(c)/c|$, the quantity used in the MVC bound. The faint blue background shows the polynomial's magnitude as $\log_{10}(1+|P(z)|)$, so its very large range fits on one color scale. Both plots use the same axes and color scales; the dot scale is nonlinear to distinguish values close to one, and the background scale is capped at 800. Nearby dots can overlap.
+
+![Degree-2650 polynomial on the complex plane, with 2649 critical-point dots colored by the magnitude of P(c)/c and a faint blue background showing the logarithmic magnitude of P(z).](docs/images/polynomial-2650.png)
+
+![Degree-2917 polynomial on the complex plane, with 2916 critical-point dots colored by the magnitude of P(c)/c and a faint blue background showing the logarithmic magnitude of P(z).](docs/images/polynomial-2917.png)
+
+These are numerical illustrations, generated from the exact rational coordinates using [the plotting script](Tools/PlotWitnesses.py) with 16000-bit arithmetic. They are separate from the Lean proofs and do not resolve the tiny certified margins visually.
+
 ## Why all higher degrees are covered
 
 Suppose a normalized polynomial $P$ beats a fixed bound $L\ge0$ at every critical point. We prove that we can increase its degree to any $M>\deg P$ while keeping that strict inequality. The idea is to add a tiny leading term:
