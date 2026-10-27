@@ -1,0 +1,9 @@
+{
+  "degree": 2725,
+  "exact_target": "9996431/10000000",
+  "critical_centers_sha256": "d697685c1dc06d3167eb9318d54a6a07f78f50d0651e9ea08ef4bf5a17f58496",
+  "source_file_name": "factored_healthy2725_bridge_source.json",
+  "source_file_sha256": "d7ee37037e6b5b3f6f155313120f3d78b2cba04e34056468c136298364a4f3c6",
+  "source_kind": "exact rational centers JSON",
+  "identity_distinction": "Prescribed centers define a NEW polynomial. No identity with the source numerical polynomial is asserted."
+}

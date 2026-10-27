@@ -1,0 +1,9 @@
+{
+  "degree": 2798,
+  "exact_target": "999649/1000000",
+  "critical_centers_sha256": "7e125ae05b9ccbbf4c41422ebcd2a57a0af369f5d6f96560b8a33fcc7838554e",
+  "source_file_name": "leja_continuation_polar2798_warm_run1_08_roots.bin",
+  "source_file_sha256": "bb93fe5230c364ffed9ea58bd323d7998835fc6516a2d25107960fc359933db4",
+  "source_kind": "exact IEEE754 dyadic centers from float64 root rows",
+  "identity_distinction": "Prescribed centers define a NEW polynomial. No identity with the source numerical polynomial is asserted."
+}

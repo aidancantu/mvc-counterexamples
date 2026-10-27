@@ -1,0 +1,81 @@
+{
+  "source_repository": "mvc research repository (local preserved findings)",
+  "snapshot_date": "2026-10-27",
+  "files": [
+    {
+      "path": "witnesses/2650/critical_centers.json",
+      "source": "findings/degree_2650_bridge/critical_centers.json",
+      "sha256": "6f59bbfe9f09053aba7dba0ded88c74ce27bae3bb9e35a111753abed19a79370"
+    },
+    {
+      "path": "witnesses/2650/config.json",
+      "source": "findings/degree_2650_bridge/config.json",
+      "sha256": "77899d7ec5e46457d3af2c697aa39c8de1edf1ae251c75940d67408407a7c186"
+    },
+    {
+      "path": "witnesses/2650/verification_32000.json",
+      "source": "findings/degree_2650_bridge/verification_32000.json",
+      "sha256": "fd7c187b4371c6ef2225d6836353790a8d78d553ad3cdc86d1547d6998af39b4"
+    },
+    {
+      "path": "witnesses/2725/critical_centers.json",
+      "source": "findings/degree_2725_bridge/critical_centers.json",
+      "sha256": "d697685c1dc06d3167eb9318d54a6a07f78f50d0651e9ea08ef4bf5a17f58496"
+    },
+    {
+      "path": "witnesses/2725/config.json",
+      "source": "findings/degree_2725_bridge/config.json",
+      "sha256": "ad0f499b41afbe5723a6055f4167e33d23cd8260ed9b82e5b56b3d4d5ede5c55"
+    },
+    {
+      "path": "witnesses/2725/verification_32000.json",
+      "source": "findings/degree_2725_bridge/verification_32000.json",
+      "sha256": "1ae79ae49286c236cd2419567c4364ae7a33ed135f90a7563e7bcbd15bc39bd8"
+    },
+    {
+      "path": "witnesses/2798/critical_centers.json",
+      "source": "findings/degree_2798_polar/critical_centers.json",
+      "sha256": "7e125ae05b9ccbbf4c41422ebcd2a57a0af369f5d6f96560b8a33fcc7838554e"
+    },
+    {
+      "path": "witnesses/2798/config.json",
+      "source": "findings/degree_2798_polar/config.json",
+      "sha256": "56aaeafdc735884c5ed892233ead4fae5fa1e2aa590a8479bff46219e49ab556"
+    },
+    {
+      "path": "witnesses/2798/verification_32000.json",
+      "source": "findings/degree_2798_polar/verification_32000.json",
+      "sha256": "6af4888c63fba6ef0cf7f2a610f3e7a8b6b05088338a8f8308711e32cbd4f854"
+    },
+    {
+      "path": "witnesses/2840/critical_centers.json",
+      "source": "findings/degree_2840_factored/critical_centers.json",
+      "sha256": "826435a8dc299f956dad10075eeaded45547057aee8b3336317002e745f62b7a"
+    },
+    {
+      "path": "witnesses/2840/config.json",
+      "source": "findings/degree_2840_factored/config.json",
+      "sha256": "1ea81bf96a8958e9d2fc97abd65f87138d6d7d523b8ec43f40e846ddf2ec2c93"
+    },
+    {
+      "path": "witnesses/2840/verification_32000.json",
+      "source": "findings/degree_2840_factored/verification_32000.json",
+      "sha256": "0c94607238e79cb8d8b45474eeccc50e334ac5a9622a63e45f1fed02d11280e5"
+    },
+    {
+      "path": "witnesses/2917/critical_centers.json",
+      "source": "findings/degree_2917_ordinary_minl1/critical_centers.json",
+      "sha256": "b0ebd7a7c025a8278e8b1bd5e161982704d32a1c2fcdcfd38cc21ab2283c0f67"
+    },
+    {
+      "path": "witnesses/2917/config.json",
+      "source": "findings/degree_2917_ordinary_minl1/config.json",
+      "sha256": "b113bb465e1ef7875278395f15c9d4799c4d307fb1a1a5b09bf40c7eaadc4b75"
+    },
+    {
+      "path": "witnesses/2917/verification_32000.json",
+      "source": "findings/degree_2917_ordinary_minl1/verification_32000.json",
+      "sha256": "98859675b0fdeb03ce2dfd9aa4130c31c76ed8475db82efb37f2b2fde6c65949"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Keep this repository focused on exact MVC witnesses, proofs, and verification. Do not add the research paper or exploratory search outputs. Use $ and $$ for Markdown mathematics. Never describe interval certificates as Lean-kernel proofs or smallest-known examples as globally minimal.

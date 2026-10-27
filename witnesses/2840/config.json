@@ -1,0 +1,9 @@
+{
+  "degree": 2840,
+  "exact_target": "249917/250000",
+  "critical_centers_sha256": "826435a8dc299f956dad10075eeaded45547057aee8b3336317002e745f62b7a",
+  "source_file_name": "leja_continuation_control2840_12_roots.bin",
+  "source_file_sha256": "ab778d441f59ebce65a28ae161a879b891c5453cc3c05d48311084065f0c8986",
+  "source_kind": "exact IEEE754 dyadic centers from float64 root rows",
+  "identity_distinction": "Prescribed centers define a NEW polynomial. No identity with the source numerical polynomial is asserted."
+}

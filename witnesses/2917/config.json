@@ -1,0 +1,9 @@
+{
+  "degree": 2917,
+  "exact_target": "1000000129/1000000000",
+  "critical_centers_sha256": "b0ebd7a7c025a8278e8b1bd5e161982704d32a1c2fcdcfd38cc21ab2283c0f67",
+  "source_file_name": "new_model_hermite2917_minl1_round4_08_roots.bin",
+  "source_file_sha256": "c59c1cfa109ca0ce54ee13e60f4fbb1d2ee5bd6df02ab12021592f601747af90",
+  "source_kind": "exact IEEE754 dyadic centers from float64 root rows",
+  "identity_distinction": "Prescribed centers define a NEW polynomial. No identity with the source numerical polynomial is asserted."
+}
