@@ -1,0 +1,19 @@
+{
+  "status": "Lean compilation and axiom inspection passed",
+  "source_sha256": {
+    "Mvc/Extension.lean": "b947dfa3e945c86ab3b2f4f3c70e8dc185d9d7f27eb1a708639d29bb1f9da369",
+    "Mvc/Coverage.lean": "4951982a8467ead0d1515929cf5cc0d55f90a8bb32fe1011636bb51690986ce5"
+  },
+  "build_commands": [
+    "lake build Mvc.Extension",
+    "lake build Mvc.Coverage"
+  ],
+  "audit_query": "import Mvc.Coverage\n#print axioms Mvc.exists_degree_extension\n#print axioms Mvc.degree_extension_small\n#print axioms Mvc.HasWitness.monotone_degree\n#print axioms Mvc.degree_bound_all_ge_2650\n#print axioms Mvc.ordinary_all_ge_2917\n",
+  "audit_stdout": "'Mvc.exists_degree_extension' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Mvc.degree_extension_small' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Mvc.HasWitness.monotone_degree' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Mvc.degree_bound_all_ge_2650' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Mvc.ordinary_all_ge_2917' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "audit_stderr": "",
+  "audit_returncode": 0,
+  "scope": "Extension is proved from arbitrary normalized polynomial hypotheses. Coverage is proved from five explicit HasWitness hypotheses. This audit does not supply those concrete witness proofs.",
+  "custom_axioms": false,
+  "sorry": false,
+  "native_decide": false
+}

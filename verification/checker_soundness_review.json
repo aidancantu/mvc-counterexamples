@@ -1,0 +1,57 @@
+{
+  "status": "independent static mathematical and semantic-chain review passed",
+  "source_sha256": {
+    "Mvc/Interval.lean": "3ea2de31953a57b4c1c47782f888f8c36f45c5e039a63cca04c8158cdec2c1ab",
+    "Mvc/ComplexBox.lean": "7e58461f1bf7b55c513f453ce855108c45c41b237b7c4303195ee5afe39d4d91",
+    "Mvc/RationalComplex.lean": "39c97f6055da9968f7447ea3e270409f6ef3cce505f16c8ce8e31722c09d401f",
+    "Mvc/Computation.lean": "9812936bfbe17234d05478de847a3ae12ab06be534169007f947d57db0218d8b",
+    "Mvc/Checker.lean": "a6147b9126f492cf101581689dbdf250dbcf4ad70199e9032e362a1f1687bf8d",
+    "Mvc/Coefficients.lean": "df78b6427fc16fb0c06445ab97a32cf7224820a6b5f3e72f2a81e8e571ccbd19",
+    "Mvc/Polynomial.lean": "2cb791ac3ea07660006af9167af0c9c492200b25c3b030d1a0e798845a57483a",
+    "Mvc/CheckerControls.lean": "9be19c47697b6dbfc7ea823ad29c8107feaffbb247e72dc8e5b172d95c30715c"
+  },
+  "reviewer": "geometry_search sibling agent",
+  "mathematical_checks": [
+    "Interval.Contains means lo <= scale*x <= hi; positive denominator floor and negated floor implement outward rounding, including negative numerators.",
+    "Complex addition, subtraction, exact rational multiplication and integration preserve rectangular enclosures at the same scale.",
+    "normSqLo bounds the true scaled squared norm from below; normSqHi bounds it from above. ratioCheck uses denominator upper bound times num^2 strictly below numerator lower bound times den^2.",
+    "checkAt requires positive scale, positive target denominator and positive input denominators with nonzero complex centers. Target numerator is a natural number, so the nonnegative-target norm-square implication applies.",
+    "productBoxes encloses ascending coefficients of the monic product of X-c. integrateAux divides coefficient k by k+1 and prepends zero, giving precisely its zero-constant primitive. evalBoxes uses the corresponding ascending Horner rule.",
+    "The mathematical prescribedPolynomial is antiderivative(q)/q(0), with q the monic critical product. The checker encloses antiderivative(q)(c) and q(0)*c, so its ratio test is for this exact polynomial.",
+    "Nonzero centers imply q(0) != 0 algebraically; a numerical q(0) enclosure need not exclude zero, since the ratio check only uses its conservative upper squared norm.",
+    "prescribedPolynomial_critical_iff proves derivative vanishes iff the point occurs in the supplied list; repeated centers are permitted. natDegree_prescribedPolynomial proves exact degree length+1, so there are no missing exterior roots.",
+    "The generic checker permits an empty center list, correctly defining degree-one P=X with vacuous critical bounds. Concrete high-degree theorems must and can establish the explicit list length; checker soundness itself does not falsely assert degree >=2.",
+    "A printed true result from Main.lean is a diagnostic only. A final theorem must separately prove check = true and apply check_sound_full."
+  ],
+  "compiled_checks": [
+    "lake build Mvc.CheckerControls passed; controls use kernel decide, accept cubic threshold 1/2, reject sharp equality 2/3, reject zero center and zero target denominator."
+  ],
+  "axiom_inspection": {
+    "soundness_theorems": [
+      "Mvc.Interval.floorDiv_mul_le",
+      "Mvc.ComplexBox.ratioCheck_sound",
+      "Mvc.productBoxes_contains",
+      "Mvc.check_sound_full",
+      "Mvc.prescribedPolynomial_critical_iff"
+    ],
+    "soundness_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "native_probe": "tiny degree-three Computation.check acceptance proved with native_decide under Lean 4.28.0",
+    "native_probe_axioms": [
+      "propext",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler"
+    ],
+    "trust_statement": "Large native_decide acceptance proofs trust Lean native Boolean evaluation and compiler/runtime correctness in addition to the kernel-checked generic soundness theorem. They are not kernel-reduction-only arithmetic proofs. No Python, Arb result, or external numerical Boolean is assumed by this checker."
+  },
+  "limitations": [
+    "This review did not execute the full degree-2650 or other large acceptance computations.",
+    "Source-input identity with earlier research JSON is a separate provenance obligation; the generated Lean list nevertheless defines the exact polynomial tested.",
+    "No missing witness inputs are silently assumed; concrete final theorem must supply acceptance and exact list length."
+  ],
+  "code_modified": false,
+  "custom_axioms_or_sorry_found": false
+}

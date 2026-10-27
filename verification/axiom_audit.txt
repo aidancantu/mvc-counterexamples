@@ -1,0 +1,22 @@
+'Mvc.exists_degree_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Mvc.check_sound_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Mvc.Results.explicit_degree_2650' depends on axioms: [propext,
+ Classical.choice,
+ Lean.ofReduceBool,
+ Lean.trustCompiler,
+ Quot.sound]
+'Mvc.Results.explicit_degree_2917' depends on axioms: [propext,
+ Classical.choice,
+ Lean.ofReduceBool,
+ Lean.trustCompiler,
+ Quot.sound]
+'Mvc.Results.every_degree_ge_2650' depends on axioms: [propext,
+ Classical.choice,
+ Lean.ofReduceBool,
+ Lean.trustCompiler,
+ Quot.sound]
+'Mvc.Results.every_degree_ge_2917' depends on axioms: [propext,
+ Classical.choice,
+ Lean.ofReduceBool,
+ Lean.trustCompiler,
+ Quot.sound]

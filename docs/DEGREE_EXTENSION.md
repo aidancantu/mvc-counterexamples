@@ -1,6 +1,6 @@
 # Counterexamples in every sufficiently large degree
 
-This note proves the degree-extension step and the exact arithmetic covering argument. The five starting witnesses are computer-assisted exact polynomials; their exhaustive critical-value certificates are a separate input. This is a mathematical proof, not a Lean theorem-prover formalization.
+This note explains the Lean-proved degree-extension and covering arguments. The formal proofs are in [Extension.lean](../Mvc/Extension.lean) and [Coverage.lean](../Mvc/Coverage.lean). [Results.lean](../Mvc/Results.lean) supplies the five concrete Lean witness proofs, so the final results have no unproved witness hypotheses.
 
 For a complex polynomial $P$ of exact degree $n\ge2$, normalized by $P(0)=0$ and $P'(0)=1$, define
 
@@ -148,8 +148,6 @@ $$
 
 No smallest failing degree, global optimality, or ordinary counterexample below degree $2917$ is asserted. The conclusion for all degrees is a theorem from the five exhaustive certificate inputs and the extension lemma; it is not a finite table of coefficients for all degrees.
 
-## Provenance and verification boundary
+## Formal verification boundary
 
-The range data agree with `../mvc/findings/degree_bound_all_large_degrees.txt` and `../mvc/investigation/experiments/new_model_degree2650_all_large_range_check.json`. The original degree-extension discussion is in `../mvc/findings/degree_monotonicity.txt`; the compact-sublevel proof above supplies the strict-margin conclusion directly, without appealing to individual root convergence.
-
-The five interval-verification bundles are computer-assisted mathematical evidence, not Lean kernel proofs. No axiom or placeholder turns them into a theorem-prover proof here. A future formalization must verify both those witness inputs and the analytic extension lemma, or clearly display them as hypotheses.
+The exact inputs and complete proof chain are in this repository. Generic analytic and arithmetic lemmas use only standard Lean/mathlib axioms. Large witness acceptance is computed by Lean `native_decide`, which additionally trusts the Lean compiler/runtime (`Lean.ofReduceBool` and `Lean.trustCompiler`). No Python checker, imported numerical success flag, or custom witness axiom is used. See [the README](../README.md) and [AxiomAudit.lean](../Mvc/AxiomAudit.lean).
